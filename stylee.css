@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+#container{
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    background-image: linear-gradient(to bottom,rgb(42,45,81),#382467);
+}
+
+#heading{
+    height: 80px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #fff;
+    /* background-color: yellow; */
+}
+
+#form-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    /* background-color: aqua; */
+}
+#form{
+    display: flex;
+    gap: 20px;
+}
+#form input{
+    width:540px;
+    height: 50px;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background-color: #1b1e45;
+    box-shadow: -2px -5px 5px #12062b;
+    color: #fff;
+    font-size: 16px;
+}
+#add-btn{
+    width: 150px;
+    height: 50px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    background-color: #403571;
+    color: #fff;
+}
+#add-btn:hover{
+    background-color: #12062b;
+}
+#add-btn:active{
+    transform: scale(1.1,1.1);
+}
+
+#city-weather-container{
+    width: 80%;
+    height: calc(100% - 190px);
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: pink; */
+    padding: 20px;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: scroll;
+    gap:20px;
+    
+}
+#city-weather-container::-webkit-scrollbar{
+    display: none;
+}
+
+.weather-div{
+    width:380px;
+    height: 240px;
+    box-sizing: border-box;
+    background-color: #1d0f3c;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 15px;
+    color:#fff;
+    padding: 10px;
+}
+#content{
+    width: 100%;
+    height: 150px;
+    background-color: yellow;
+    
+}
+#temp_deg{
+    font-size: 32px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+#temp_deg img{
+    background-color: #fff;
+    border-radius: 50%;
+}
+#city-name-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#sun{
+    height: 70px;
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: yellow; */
+}
+#sun p{
+    display: flex;
+    gap:10px;
+    align-items: center;
+}
+#sunrise_icon{
+    color:yellow;
+}
+#sunset_icon{
+    color:orangered;
+}
+#city-name-p{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+#extra-details{
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+}
+#wind-detail{
+    display: flex;
+    justify-content: space-between;
+}
+#wind-detail sub{
+    font-size: 7px;
+}
+#cloudiness{
+    font-size: 14px;
+}
+
+#feels-like{
+    display: flex;
+    gap:15px;
+}
+#feels-like sub{
+    font-size: 7px;
+}
+
+
+
+
